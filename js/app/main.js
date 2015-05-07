@@ -14,8 +14,13 @@ require
   // Start the main app logic.
   require(['game-items'], function (gameItems)  {
 
+    var configs = {
+      'rows': 4,
+      'cols': 6,
+      'mines': 10
+    };
     // Setup the canvas.
-    new gameItems.Minesweep('container');
+    new gameItems.Minesweep('container', configs);
 
   });
 })();
