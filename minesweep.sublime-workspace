@@ -1,0 +1,1210 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"_screen",
+				"_screenY"
+			],
+			[
+				"_gr",
+				"_grant"
+			],
+			[
+				"_scree",
+				"_screenX"
+			],
+			[
+				"_scre",
+				"_screenY"
+			],
+			[
+				"_padd",
+				"_paddingBottom"
+			],
+			[
+				"_stage",
+				"_stageWidth"
+			],
+			[
+				"container",
+				"containerId"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"current",
+				"currentUserFactory"
+			],
+			[
+				"logg",
+				"loggedIn"
+			],
+			[
+				"_curretn",
+				"_currentDialogId"
+			],
+			[
+				"tran",
+				"transitionKey"
+			],
+			[
+				"_current",
+				"_currentDialog"
+			],
+			[
+				"_curren",
+				"_currentDialogId"
+			],
+			[
+				"success",
+				"success"
+			],
+			[
+				"_dial",
+				"_dialogs"
+			],
+			[
+				"dial",
+				"dialogs"
+			],
+			[
+				"_state",
+				"_stateKey"
+			],
+			[
+				"_dia",
+				"_dialogIndex"
+			],
+			[
+				"_piece",
+				"_pieceLabel"
+			],
+			[
+				"element",
+				"_elementHorizontalPadding"
+			],
+			[
+				"_bucketLa",
+				"_bucketLabelContainer"
+			],
+			[
+				"FitIN",
+				"FitIntoTypePie"
+			],
+			[
+				"Container",
+				"Container_constructor"
+			],
+			[
+				"_check",
+				"_checkBucketIntersection"
+			],
+			[
+				"FitInt",
+				"FitIntoTypePie"
+			],
+			[
+				"offS",
+				"offsetX"
+			],
+			[
+				"drag",
+				"draggablePieces"
+			],
+			[
+				"_sect",
+				"_sectorValid"
+			],
+			[
+				"pointX",
+				"pointX"
+			],
+			[
+				"globa",
+				"globalPointer"
+			],
+			[
+				"using",
+				"usingOverflow"
+			],
+			[
+				"uti",
+				"utilsDirective"
+			],
+			[
+				"array",
+				"array2"
+			],
+			[
+				"arra",
+				"array2"
+			],
+			[
+				"arr",
+				"array1"
+			],
+			[
+				"seelc",
+				"selectedFilters"
+			],
+			[
+				"filter",
+				"_filterParams"
+			],
+			[
+				"selec",
+				"selectedFilters"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"filter-bo",
+				"filter-list-border"
+			],
+			[
+				"results",
+				"resultInteractives"
+			],
+			[
+				"result",
+				"results"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"invl",
+				"invalidDay"
+			],
+			[
+				"hist",
+				"historyDay"
+			],
+			[
+				"fun",
+				"fun	function …"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"_hy",
+				"_insertHyphenation"
+			],
+			[
+				"DEB",
+				"_DEBUGLINECONTS"
+			],
+			[
+				"_posi",
+				"_positionWordPart"
+			],
+			[
+				"hyph",
+				"hyphenatedWordParts"
+			],
+			[
+				"hyphe",
+				"hyphenatedContexts"
+			],
+			[
+				"chara",
+				"characters"
+			],
+			[
+				"charSty",
+				"charStyleCount"
+			],
+			[
+				"curretn",
+				"currentNode"
+			],
+			[
+				"operting",
+				"operatingContext"
+			],
+			[
+				"oper",
+				"operatingContext"
+			],
+			[
+				"_setuo",
+				"_setupDocSizing"
+			],
+			[
+				"cee-mrg-top-",
+				"cee-mrg-top-sm"
+			],
+			[
+				"cee-",
+				"cee-green"
+			],
+			[
+				"for",
+				"fori	For pre-increment"
+			],
+			[
+				"com",
+				"compound"
+			],
+			[
+				"class",
+				"classNameForStyle"
+			],
+			[
+				"charS",
+				"charStyleCount"
+			],
+			[
+				"charSt",
+				"charStyleCount"
+			],
+			[
+				"addTag",
+				"addTagAttribute"
+			],
+			[
+				"root",
+				"rootNode"
+			],
+			[
+				"charStly",
+				"charStyleCount"
+			],
+			[
+				"charStyle",
+				"charStyleName"
+			],
+			[
+				"text",
+				"textBuffer"
+			],
+			[
+				"Conte",
+				"ContentNode"
+			],
+			[
+				"wrapper",
+				"wrapperNode"
+			],
+			[
+				"overr",
+				"overrideError"
+			],
+			[
+				"charStyles",
+				"charStyles"
+			],
+			[
+				"CSS",
+				"CssExport"
+			],
+			[
+				"cee-mr",
+				"cee-mrg-bot"
+			],
+			[
+				"cee-mrg",
+				"cee-mrg-top"
+			],
+			[
+				"cee-pad",
+				"cee-pad-top"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"cee-b",
+				"cee-blue-sel"
+			],
+			[
+				"cee-green-sel",
+				"cee-green-sel"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"cee-g",
+				"cee-gray-245"
+			],
+			[
+				"al",
+				"alt	Attr"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"characterS",
+				"appliedCharacterStyle"
+			],
+			[
+				"_process",
+				"_processContextCharStyle"
+			],
+			[
+				"charac",
+				"character"
+			],
+			[
+				"isSame",
+				"isSameType"
+			],
+			[
+				"cont",
+				"Context"
+			],
+			[
+				"styl",
+				"stylesLength"
+			],
+			[
+				"char",
+				"character"
+			],
+			[
+				"_pr",
+				"_processContextCharStyle"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"or",
+				"order"
+			],
+			[
+				"color",
+				"color-orange"
+			],
+			[
+				"font-fo",
+				"font-fort-regular"
+			],
+			[
+				"co",
+				"color-grey-lt"
+			],
+			[
+				"no",
+				"normal"
+			],
+			[
+				"colo",
+				"color-orange"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"content",
+				"content-font-light"
+			],
+			[
+				"Fort",
+				"Fort-Book"
+			],
+			[
+				"JAVA",
+				"JAVA_HOME"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"fu",
+				"fun	function …"
+			],
+			[
+				"f",
+				"for	for …"
+			],
+			[
+				"func",
+				"func_get_arg"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"re",
+				"req	require …"
+			],
+			[
+				"word",
+				"wordId"
+			],
+			[
+				"para",
+				"paragraph"
+			],
+			[
+				"isComp",
+				"isCompound"
+			],
+			[
+				"con",
+				"constructor	@constructor"
+			],
+			[
+				"const",
+				"constructor	@constructor"
+			],
+			[
+				"Docu",
+				"DocumentExport"
+			],
+			[
+				"temp",
+				"tempLeft"
+			],
+			[
+				"left",
+				"left"
+			],
+			[
+				"setTag",
+				"setTagAttribute"
+			],
+			[
+				"fo",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"fin",
+				"finX"
+			],
+			[
+				"setTa",
+				"setTagAttribute"
+			],
+			[
+				"expor",
+				"exportedFonts"
+			],
+			[
+				"cs",
+				"css"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 396,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/main.css",
+			"settings":
+			{
+				"buffer_size": 287,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 368.0,
+		"last_filter": "em",
+		"selected_items":
+		[
+			[
+				"em",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"linter",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"enable",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"PHP Code Sniffer: ",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"git",
+				"GitGutter: Show Comparing Against"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"sublime lin",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"lin",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"toggle l",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"set sy java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set syntax java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sublimel",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"enable l",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"subl",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"gutter",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"mode",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"insall",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 543.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"pwd",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/theRao/Documents/Labs/Axial",
+		"/Users/theRao/Documents/Labs/Axial/css",
+		"/Users/theRao/Documents/Labs/Axial/js"
+	],
+	"file_history":
+	[
+		"/Users/theRao/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/theRao/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/theRao/Documents/Atomic/CEE/cee/app/src/controllers/yieldmo.sublime-project",
+		"/Users/theRao/Documents/Atomic/CEE/cee/app/src/index.php",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/app-js/home.js",
+		"/Users/theRao/Documents/Atomic/Amplify/burst/app/manipulatives/custom-questions/js/manipulatives/speech-input-type.js",
+		"/Users/theRao/Documents/Atomic/CEE/cee/app/src/controllers/BaseController.php",
+		"/Users/theRao/Documents/Atomic/CEE/cee/app/routes.ini",
+		"/Users/theRao/Documents/Atomic/CEE/cee/app/src/controllers/LessonsController.php",
+		"/Users/theRao/Documents/Atomic/CEE/cee/app/src/controllers/ConceptsController.php",
+		"/Users/theRao/Documents/Atomic/CEE/cee/slate/source/includes/_lessons.md",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/js/filters/joinFilter.js",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/js/news.js",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/directives/templates/cee-lesson-preview.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/js/lessons.js",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/js/starters.js",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/partials/get-started.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/partials/home.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/partials/base.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/index.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/partials/lessons.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/js/directives/utils.directive.js",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/directives/templates/cee-filter-bar.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/js/app.js",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/js/utils.js",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/js/services/lessons.service.js",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/directives/containers/cee-starter-bundle.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/js/services/starterkit.js",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/js/starter.js",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/directives/containers/cee-home-page.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/partials/lesson-detail.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/less/_cee-filter-bar.less",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/less/_vars.less",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/less/_reusable.less",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/js/services/concepts.service.js",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/css/cee.css",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/less/cee.less",
+		"/Users/theRao/Documents/Atomic/CEE/cee/app/src/controllers/NewsController.php",
+		"/Users/theRao/Documents/Atomic/CEE/cee/slate/source/index.md",
+		"/etc/hosts",
+		"/Users/theRao/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/etc/apache2/extra/httpd-vhosts.conf",
+		"/Users/theRao/Downloads/neweconedlink (1).sql",
+		"/Users/theRao/Documents/Atomic/CEE/cee/app/src/controllers/StandardsController.php",
+		"/Users/theRao/Documents/Atomic/CEE/cee/app/src/controllers/AuthorController.php",
+		"/Users/theRao/Documents/Atomic/CEE/cee/app/vendor/bcosca/fatfree/lib/api/classLog.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/slate/Dockerfile",
+		"/Users/theRao/Documents/Atomic/CEE/cee/.gitignore",
+		"/Users/theRao/Documents/Atomic/CEE/cee/cee.sublime-project",
+		"/Users/theRao/Downloads/httpd-vhosts.conf",
+		"/private/etc/apache2/httpd.conf",
+		"/private/etc/apache2/extra/httpd-vhosts.conf",
+		"/Users/theRao/Downloads/f3-3.0.6.cms.demo/app/config.ini",
+		"/Users/theRao/Documents/Atomic/CEE/cee/app/src/controllers/CouncilEventsController.php",
+		"/Users/theRao/.bash_profile",
+		"/Users/theRao/Documents/Atomic/CEE/docs/currentwww/www/js/email-add-ajax.php",
+		"/Users/theRao/Documents/Atomic/CEE/cee/app/src/controllers/InteractiveToolsController.php",
+		"/Users/theRao/Downloads/f3-3.0.6.cms.demo/app/cms.php",
+		"/Users/theRao/Downloads/f3-3.0.6.cms.demo/app/routes.ini",
+		"/Users/theRao/Documents/Atomic/CEE/cee/app/src/controllers/ToolsController.php",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www-api/index.php",
+		"/Users/theRao/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/theRao/Library/Application Support/Sublime Text 3/Packages/Phpcs/phpcs.sublime-settings",
+		"/Users/theRao/Library/Application Support/Sublime Text 3/Packages/User/phpcs.sublime-settings",
+		"/Users/theRao/Library/Application Support/Sublime Text 3/Packages/GoSublime/CHANGELOG.md",
+		"/Users/theRao/Documents/Atomic/CEE/cee/app/src/controllers/DbConnector.php",
+		"/Users/theRao/Documents/Atomic/CEE/cee/app/vendor/bcosca/fatfree/lib/base.php",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/directives/containers/cee-lesson-detail.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/less/_ceeConceptList.less",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/less/_ceeLessonDetail.less",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/less/_ceeMetaList.less",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/directives/templates/cee-concept-list.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/directives/templates/cee-lesson.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/directives/templates/cee-meta-list.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/directives/containers/cee-lesson-detail-list.html",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/less/_ceeMetaList.css",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/css/_vars.css",
+		"/Applications/Utilities/Adobe Utilities-CS6.localized/ExtendScript Toolkit CS6/ExtendScript Toolkit.app/Contents/SharedSupport/Required/Spruce.ws",
+		"/Applications/Utilities/Adobe Utilities-CS6.localized/ExtendScript Toolkit CS6/ExtendScript Toolkit.app/Contents/SharedSupport/Required/Development.ws",
+		"/Applications/Utilities/Adobe Utilities-CS6.localized/ExtendScript Toolkit CS6/ExtendScript Toolkit.app/Contents/SharedSupport/Required/Default.ws",
+		"/Applications/Utilities/Adobe Utilities-CS6.localized/ExtendScript Toolkit CS6/ExtendScript Toolkit.app/Contents/SharedSupport/Required/defs.xml",
+		"/Applications/Utilities/Adobe Utilities-CS6.localized/ExtendScript Toolkit CS6/ExtendScript Toolkit.app/Contents/SharedSupport/Required/24scripts.jsx",
+		"/Applications/Utilities/Adobe Utilities-CS6.localized/ExtendScript Toolkit CS6/ExtendScript Toolkit.app/Contents/SharedSupport/Required/23callstack.jsx",
+		"/Applications/Utilities/Adobe Utilities-CS6.localized/ExtendScript Toolkit CS6/ExtendScript Toolkit.app/Contents/SharedSupport/Required/80document.jsx",
+		"/Users/theRao/Documents/Atomic/StoriaEPub/StoriaExporter/StoriaExporter.jsx",
+		"/Users/theRao/Documents/Atomic/StoriaEPub/StoriaExporter/includes/Models.jsxinc",
+		"/Users/theRao/Documents/Atomic/StoriaEPub/StoriaExporter/includes/Exporters.jsxinc",
+		"/Users/theRao/Documents/Atomic/StoriaEPub/StoriaExporter/includes/Utils.jsxinc",
+		"/Users/theRao/Documents/Atomic/StoriaEPub/StoriaExporter/includes/ExporterInternals.jsxinc",
+		"/Users/theRao/storiaexporter/Export-1417046096625/epub3/OPS/cover.xhtml",
+		"/Users/theRao/storiaexporter/Export-1417045756962/epub3/OPS/cover.xhtml",
+		"/Users/theRao/storiaexporter/Export-1417044772163/epub3/OPS/cover.xhtml",
+		"/Users/theRao/Documents/Atomic/StoriaEPub/StoriaExporter/docs/index.html",
+		"/Users/theRao/storiaexporter/Export-1416871330292/epub3/OPS/css/global.css",
+		"/Users/theRao/storiaexporter/Export-1416871064232/epub3/OPS/css/global.css",
+		"/Users/theRao/storiaexporter/Export-1416527656717/epub3/OPS/css/global.css",
+		"/Users/theRao/storiaexporter/Export-1416871064232/epub3/OPS/css/page0004.css",
+		"/Users/theRao/storiaexporter/Export-1416871064232/epub3/OPS/css/cover.css",
+		"/Users/theRao/Documents/Atomic/CEE/cee/www/directives/containers/cee-about-us.html",
+		"/Users/theRao/storiaexporter/Export-1416525729275/epub3/OPS/0007.xhtml",
+		"/Users/theRao/storiaexporter/Export-1416516542585/epub3/OPS/css/global.css",
+		"/Users/theRao/storiaexporter/Export-1416516180983/epub3/OPS/css/global.css",
+		"/Users/theRao/storiaexporter/Export-1416524618997/epub3/OPS/0007.xhtml",
+		"/Users/theRao/storiaexporter/Export-1416516180983/epub3/OPS/0007.xhtml",
+		"/Users/theRao/storiaexporter/Export-1416516542585/epub3/OPS/0007.xhtml",
+		"/Users/theRao/Desktop/OEBPS/css/Tundra_Int_idstyles.css",
+		"/Users/theRao/Documents/Atomic/CEE/cee/startup.sh",
+		"/Users/theRao/Documents/Atomic/CEE/cee/stopserver.sh",
+		"/Users/theRao/Desktop/020-021_m180_tli_21_b1t1l5.xml",
+		"/Users/theRao/Desktop/EReads/WordsOfPower/epub3/OPS/content.opf",
+		"/Users/theRao/Desktop/EReads/TooYoungToBeASoldier/epub3/OPS/content.opf",
+		"/Users/theRao/Desktop/EReads/OilTakesAToll/epub3/OPS/content.opf",
+		"/Users/theRao/Desktop/EReads/FloatingJunkyard/epub3/OPS/content.opf",
+		"/Users/theRao/Desktop/EReads/AHeatedBattle/epub3/OPS/content.opf",
+		"/Users/theRao/Library/Application Support/Sublime Text 3/Packages/DashDoc/DashDoc.sublime-settings",
+		"/Users/theRao/Library/Application Support/Sublime Text 3/Packages/User/DashDoc.sublime-settings",
+		"/Users/theRao/Documents/Atomic/StoriaEPub/StoriaExporter/StoriaExporter.sublime-project",
+		"/Users/theRao/Documents/Atomic/RandomHouse/PettClient/app/scripts/services/pettAPIService.js",
+		"/Users/theRao/Documents/Atomic/RandomHouse/PettClient/app/proxy.php",
+		"/Users/theRao/Documents/Atomic/RandomHouse/PettClient/.gitignore",
+		"/Users/theRao/Documents/Atomic/RandomHouse/PettClient/app/scripts/services/prhApiService.js",
+		"/Users/theRao/Documents/Atomic/RandomHouse/PettClient/app/scripts/pettContext.js",
+		"/Users/theRao/Library/Application Support/Sublime Text 3/Packages/User/SublimeOnSaveBuild.sublime-settings",
+		"/Users/theRao/Library/Application Support/Sublime Text 3/Packages/SublimeOnSaveBuild/SublimeOnSaveBuild.sublime-settings",
+		"/Users/theRao/Documents/Atomic/RandomHouse/PettClient/pettClient.sublime-project",
+		"/Users/theRao/Documents/Atomic/RandomHouse/PettClient/app/styles/template_list.scss",
+		"/Users/theRao/Documents/Atomic/RandomHouse/PettClient/app/index.html",
+		"/Users/theRao/Documents/Atomic/RandomHouse/PettClient/app/rjsConfig.js"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"*.jsxinc",
+			"",
+			"*.jsxinc",
+			"",
+			"pGlobal",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"allow-credentials",
+			"user",
+			"SQL\\Session",
+			"SESSION.api.loggedIn",
+			"getLoggedInUser",
+			"_pActivateUser",
+			"_exit",
+			"_goToDialog",
+			"_nextDialog",
+			"lengt",
+			"font",
+			"_horizontalPadding",
+			"bucketLabelContain",
+			"FitIntoType",
+			"showOutLine",
+			"hideOutline",
+			"_pieceStroke",
+			"this._bucketFill",
+			"showOut",
+			"_setupPiece",
+			"_pieceShadow",
+			"removeSha",
+			"shadow",
+			"_inBucket",
+			"draggablePieces",
+			"_checkAndSnap",
+			"sectorvalid",
+			"_checkSector",
+			"_checkAndSnap",
+			"snap",
+			"_localPointerPoint",
+			"_setupPiece",
+			"_rotateAroundPoint",
+			"pointX",
+			"_localPointerPoint",
+			"_computeMetrics",
+			"timeout",
+			"overflow",
+			"called",
+			"metadata",
+			"_updateLessonData",
+			"typeId",
+			"package",
+			"news-meta",
+			"null",
+			"isLessonIdValid",
+			"lessonId",
+			"metadata",
+			"isLessonIdValid",
+			"_pGetLesssonPreview",
+			"error",
+			",\"",
+			"brew",
+			":",
+			"h3",
+			"_insertHyphenation",
+			"characters",
+			"moved",
+			"characters",
+			"debug",
+			"w0000025471",
+			"w0000025470",
+			"_positionContext",
+			"this.cssExport.addCharStyle(charStyle);",
+			"this._currentContext",
+			"_processCharacter",
+			"debug",
+			".origin",
+			"context.characters",
+			"_positionContext",
+			"complete",
+			"_completeContext",
+			"_updateContext",
+			"resetConte",
+			"resetConte\nresetConte",
+			"wrapNode",
+			"_resetContext",
+			"new Context",
+			"compoundContexts",
+			"charStyles",
+			"isEnumerator",
+			"_positionContext",
+			"_resetContext",
+			"pageTitle",
+			"'body'",
+			"figure",
+			"_setupSizing",
+			"figure",
+			"_setupSizing",
+			"figure",
+			"gray",
+			"glyphicon",
+			"lesson-template",
+			"lesson-",
+			"_setupSizing",
+			"figure",
+			"body",
+			"recordFatality",
+			"class",
+			"_updateContext",
+			"_processCharacter",
+			"charStyleNa",
+			".name",
+			"regex",
+			"recordIssue",
+			"getFont",
+			"getFontHavingNameFromList",
+			"getFontHaving",
+			"cleaning up",
+			"_processContextCharStyle",
+			"dataNode",
+			"isCompound",
+			"_completeContextG",
+			"_completeContext",
+			"getEr",
+			"_completeContext",
+			"context.parentNode",
+			"contextId",
+			"pageFrame",
+			"context.text",
+			"addParaStyle",
+			"_getFont",
+			"charStyles",
+			"addParaStyle",
+			"_processParaStyles",
+			"_setupParaStyles",
+			"hext",
+			"_hexStringForColor"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			",\\n\"",
+			",\\n",
+			"h6",
+			"cee-lesson",
+			"cee-btn-blue",
+			"cee-btn-green",
+			"data",
+			"localhost:8800?api",
+			"localhost:8888/app",
+			"_getFrameForBounds",
+			"content",
+			"TocExport",
+			"\"",
+			"contents",
+			"\"",
+			"parentNode",
+			"//\\$\\.writeln",
+			"_tagName",
+			"setTagAttribute",
+			"echoResponse",
+			"SectorPixelData",
+			"pWayFindingCircle",
+			"pInvisibleColliderScript",
+			"pGlobal",
+			"\\n",
+			" ",
+			"",
+			" "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								219,
+								219
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 287,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								247,
+								247
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o:///Users/theRao/Documents/Personlich/go/src/github.com/raorahul/sillyproxy":
+	{
+		"height": 98.0
+	},
+	"output.GoSublime-main-output":
+	{
+		"height": 98.0
+	},
+	"output.exec":
+	{
+		"height": 67.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "minesweep.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"utils",
+				"includes/Utils.jsxinc"
+			],
+			[
+				"",
+				"includes/Helpers.jsxinc"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 87.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"setTagA",
+				"setTagAttributes"
+			],
+			[
+				"tocex",
+				"TOCExporter"
+			],
+			[
+				"utils",
+				"Utils"
+			],
+			[
+				"Metadata",
+				"MetaDataExporter"
+			]
+		],
+		"width": 360.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 249.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,21 @@
+/*@font-face {
+  font-family: '8bit';
+  src: url('/fonts/eightbit.ttf') format('truetype');
+}*/
+
+body, html {
+  width: 100%;,
+  margin: 0px;
+  padding: 0px;
+}
+
+
+#container {
+  width: 100%;
+}
+
+#banner {
+  font-family: '8bit', Helvetica, sans-serif;
+  font-size: 0.8em;
+  display: none;
+}
