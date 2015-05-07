@@ -17,11 +17,10 @@ define, createjs, document, window, console
     function Tile (tileId) {
       this._flag = false;
       this._open = false;
-      this._mine = false;
       this._counter = '';
 
-
       this.tileId = tileId;
+      this.mine = false;
       this.nbTop = null;
       this.nbRight = null;
       this.nbLeft = null;
@@ -37,6 +36,8 @@ define, createjs, document, window, console
     proto.setupView = function (stage, x, y, width, height) {
       this.stage = stage;
       this._container = new createjs.Container();
+      this._container.x = x;
+      this._container.y = y;
       this._tileRect = new createjs.Shape();
       this._tileRect.graphics
       .f('#d8d8d8')
@@ -45,8 +46,66 @@ define, createjs, document, window, console
       .s('#646464')
       .r(0, 0, width, height);
       this._container.addChild(this._tileRect);
+      this._container.setBounds(0, 0, width, height);
 
       this.stage.addChild(this._container);
+
+      var self = this;
+      this._container.on('click', function (event) {
+        self.handleClick(event);
+      });
+    };
+
+    proto.handleClick = function (event) {
+      if (event.nativeEvent.button === 0) {
+        this.handleClear(event);
+      }
+      else {
+        this.handleFlag(event);
+      }
+    };
+
+    proto.handleFlag = function(event) {
+      this._flag = !this._flag;
+
+      if (this._flag) {
+        this._tileRect.graphics
+        .f('blue')
+        .r(0, 0, 40, 40);
+      }
+      else if (this.mine){
+        this._tileRect.graphics
+        .f('red')
+        .r(0, 0, 40, 40);
+      }
+      else {
+        this._tileRect.graphics
+        .f('#d8d8d8')
+        .r(0, 0, 40, 40);
+      }
+
+      this.stage.update();
+
+      event.preventDefault();
+    };
+
+    proto.handleClear = function(event) {
+      console.log(this.tileId + 'Left');
+      console.log(event);
+
+      event.preventDefault();
+    };
+
+    proto._printNebs = function () {
+      console.log('' + this.tileId);
+
+      var nbString = '';
+      nbString += (this.nbTop)? 'nbTop: ' + this.nbTop.tileId : 'nbTop: null';
+      nbString += (this.nbRight)? ' nbRight: ' + this.nbRight.tileId : ' nbRight: null';
+      nbString += (this.nbBottom)? ' nbBottom: ' + this.nbBottom.tileId : ' nbBottom: null';
+      nbString += (this.nbLeft)? ' nbLeft: ' + this.nbLeft.tileId : ' nbLeft: null';
+      console.log(nbString);
+      console.log();
     };
 
     // The game manager.
@@ -59,10 +118,10 @@ define, createjs, document, window, console
       this._containerId = containerId;
       this._configs = configs;
       this._pixelRatio = window.devicePixelRatio || 1;
-      var dimensions = 20 * this._pixelRatio;
-      this._tileWidth = dimensions;
-      this._tileHeight = dimensions;
+      this._tileWidth = this._configs.tileWidth * this._pixelRatio;
+      this._tileHeight = this._configs.tileHeight * this._pixelRatio;
 
+      var dimensions = 20 * this._pixelRatio;
       this._topOffset = dimensions;
       this._leftOffset = dimensions;
 
@@ -73,6 +132,9 @@ define, createjs, document, window, console
       this._containerNode = null;
 
       this._stage = null;
+
+      this._tiles = [];
+      this._mineTiles = [];
 
       // this._screenX = 0;
       // this._screenY = 0;
@@ -108,6 +170,10 @@ define, createjs, document, window, console
       this._canvasNode.style.width =  (this._stageWidth / this._pixelRatio) + 'px';
       this._canvasNode.style.height =  (this._stageHeight / this._pixelRatio) + 'px';
 
+      this._canvasNode.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+      });
+
       // Setup the stage.
       this._stage = new createjs.Stage(this._canvasNode);
       createjs.Touch.enable(this._stage);
@@ -134,6 +200,7 @@ define, createjs, document, window, console
       var rowY = 0;
       var j;
       var tile;
+      var neb;
       for (i = 0; i < rows; ++i) {
 
         rowY = i * this._tileHeight;
@@ -141,10 +208,53 @@ define, createjs, document, window, console
         for (j = 0; j < cols; ++j) {
           tile = new Tile('' + counter);
           tile.setupView(this._stage, (j * this._tileWidth), rowY, this._tileWidth, this._tileHeight);
+          this._tiles.push(tile);
+
+          // Set left neighbor.
+          if (counter > 0 && counter % cols > 0) {
+            neb = this._tiles[counter-1];
+            tile.nbLeft = neb;
+            neb.nbRight = tile;
+          }
+
+          // Set top neighbor.
+          if (counter >= cols) {
+            neb = this._tiles[counter-cols];
+            tile.nbTop = this._tiles[counter-cols];
+            neb.nbBottom = tile;
+          }
+
+          counter++;
         }
 
         j = 0;
       }
+
+
+      // All tiles have been initialized and setup - allocate mines
+      var availItems = this._tiles.slice();
+      for (i = 0; i < this._configs.mines; ++ i) {
+
+        // Get a random index from the array.
+        var randomIndex = Math.floor(Math.random() * availItems.length);
+        tile = availItems[randomIndex];
+        tile.mine = true;
+
+        // Remove the item from the array.
+        availItems.splice(randomIndex, 1);
+
+        // todo: remove me.
+        tile._tileRect.graphics.f('red').r(0, 0, this._tileWidth, this._tileHeight);
+      }
+
+
+      availItems = null;
+
+      // todo: remove me.
+      for (i = 0; i < this._tiles.length; ++i) {
+        this._tiles[i]._printNebs();
+      }
+
     };
 
 

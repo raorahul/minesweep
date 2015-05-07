@@ -17,7 +17,9 @@ require
     var configs = {
       'rows': 4,
       'cols': 6,
-      'mines': 10
+      'mines': 10,
+      'tileWidth': 40,
+      'tileHeight': 40
     };
     // Setup the canvas.
     new gameItems.Minesweep('container', configs);
