@@ -27,6 +27,7 @@ define, createjs, document, window, console
       this.nbBottom = null;
 
       this.stage = null;
+      this.gameManager = null;
 
       this._container = null;
       this._tileRect = null;
@@ -54,6 +55,13 @@ define, createjs, document, window, console
       this._container.on('click', function (event) {
         self.handleClick(event);
       });
+    };
+
+    proto.showMineColor = function () {
+      var bounds = this._container.getBounds();
+      this._tileRect.graphics
+      .f('black')
+      .r(0, 0, bounds.width, bounds.width);
     };
 
     proto.handleClick = function (event) {
@@ -90,8 +98,13 @@ define, createjs, document, window, console
     };
 
     proto.handleClear = function(event) {
-      console.log(this.tileId + 'Left');
-      console.log(event);
+
+      if (this.mine) {
+        this.gameManager.hitMine();
+      }
+      else {
+        // todo: open.
+      }
 
       event.preventDefault();
     };
@@ -208,6 +221,7 @@ define, createjs, document, window, console
         for (j = 0; j < cols; ++j) {
           tile = new Tile('' + counter);
           tile.setupView(this._stage, (j * this._tileWidth), rowY, this._tileWidth, this._tileHeight);
+          tile.gameManager = this;
           this._tiles.push(tile);
 
           // Set left neighbor.
@@ -239,6 +253,7 @@ define, createjs, document, window, console
         var randomIndex = Math.floor(Math.random() * availItems.length);
         tile = availItems[randomIndex];
         tile.mine = true;
+        this._mineTiles.push(tile);
 
         // Remove the item from the array.
         availItems.splice(randomIndex, 1);
@@ -255,6 +270,20 @@ define, createjs, document, window, console
         this._tiles[i]._printNebs();
       }
 
+    };
+
+    proto.hitMine = function () {
+      var i;
+      var arrLength = this._mineTiles.length;
+      var tile;
+      for (i = 0; i < arrLength; ++i) {
+        tile = this._mineTiles[i];
+        tile.showMineColor();
+      }
+
+      this._stage.update();
+
+      window.alert('Game over');
     };
 
 
