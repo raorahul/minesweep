@@ -16,15 +16,34 @@ define, createjs, document, window, console
     // Represents a single cell.
     function Tile (tileId) {
       this._flag = false;
-      this._open = false;
-      this._counter = '';
 
+      this.open = false;
       this.tileId = tileId;
       this.mine = false;
       this.nbTop = null;
       this.nbRight = null;
       this.nbLeft = null;
       this.nbBottom = null;
+
+      this.nebs = {
+        'top': null,
+        'right': null,
+        'bottom': null,
+        'left': null,
+        'topLeft': null,
+        'topRight': null,
+        'bottomLeft': null,
+        'bottomRight': null
+      };
+
+      this.nebMineCount = {
+        'top': 0,
+        'right': 0,
+        'bottom': 0,
+        'left': 0
+      };
+
+      this.totalNebMines = 0;
 
       this.stage = null;
       this.gameManager = null;
@@ -57,11 +76,30 @@ define, createjs, document, window, console
       });
     };
 
-    proto.showMineColor = function () {
+    proto.showMines = function () {
       var bounds = this._container.getBounds();
       this._tileRect.graphics
       .f('black')
       .r(0, 0, bounds.width, bounds.width);
+    };
+
+    proto.showMineCount = function () {
+      if (this.mine || this.totalNebMines === 0) {
+        return;
+      }
+      var bounds = this._container.getBounds();
+      var textHt = bounds.height / 2.5;
+      var text = new createjs.Text('' + this.totalNebMines, textHt + 'px Helvetica', 'black');
+
+
+      var h = text.getMeasuredHeight();
+      var w = text.getMeasuredWidth();
+
+      text.x = (bounds.width - w) / 2;
+      text.y = (bounds.height - h) / 2;
+
+      this._container.addChild(text);
+      // this.stage.update();
     };
 
     proto.handleClick = function (event) {
@@ -99,11 +137,18 @@ define, createjs, document, window, console
 
     proto.handleClear = function(event) {
 
+      if (this.open) {
+        return;
+      }
+
       if (this.mine) {
         this.gameManager.hitMine();
       }
+      else if (this.totalNebMines > 0) {
+        this.gameManager.openTile(this);
+      }
       else {
-        // todo: open.
+        this.gameManager.openTilePropagating(this);
       }
 
       event.preventDefault();
@@ -113,10 +158,11 @@ define, createjs, document, window, console
       console.log('' + this.tileId);
 
       var nbString = '';
-      nbString += (this.nbTop)? 'nbTop: ' + this.nbTop.tileId : 'nbTop: null';
-      nbString += (this.nbRight)? ' nbRight: ' + this.nbRight.tileId : ' nbRight: null';
-      nbString += (this.nbBottom)? ' nbBottom: ' + this.nbBottom.tileId : ' nbBottom: null';
-      nbString += (this.nbLeft)? ' nbLeft: ' + this.nbLeft.tileId : ' nbLeft: null';
+      nbString += (this.nebs.top)? 'nbTop: ' + this.nebs.top.tileId : 'nbTop: null';
+      nbString += (this.nebs.right)? ' nbRight: ' + this.nebs.right.tileId : ' nbRight: null';
+      nbString += (this.nebs.bottom)? ' nbBottom: ' + this.nebs.bottom.tileId : ' nbBottom: null';
+      nbString += (this.nebs.left)? ' nbLeft: ' + this.nebs.left.tileId : ' nbLeft: null';
+      // nbString += (this.nebs.left)? ' nbLeft: ' + this.nebs.left.tileId : ' nbLeft: null';
       console.log(nbString);
       console.log();
     };
@@ -148,6 +194,7 @@ define, createjs, document, window, console
 
       this._tiles = [];
       this._mineTiles = [];
+      this._openTiles = [];
 
       // this._screenX = 0;
       // this._screenY = 0;
@@ -214,6 +261,8 @@ define, createjs, document, window, console
       var j;
       var tile;
       var neb;
+      var hasTop;
+      var hasLeft;
       for (i = 0; i < rows; ++i) {
 
         rowY = i * this._tileHeight;
@@ -227,15 +276,41 @@ define, createjs, document, window, console
           // Set left neighbor.
           if (counter > 0 && counter % cols > 0) {
             neb = this._tiles[counter-1];
-            tile.nbLeft = neb;
-            neb.nbRight = tile;
+            tile.nebs.left = neb;
+            neb.nebs.right = tile;
+            hasLeft = true;
+            // tile.nbLeft = neb;
+            // neb.nbRight = tile;
+          }
+          else {
+            hasLeft = false;
           }
 
           // Set top neighbor.
           if (counter >= cols) {
             neb = this._tiles[counter-cols];
-            tile.nbTop = this._tiles[counter-cols];
-            neb.nbBottom = tile;
+            tile.nebs.top = neb;
+            neb.nebs.bottom = tile;
+            hasTop = true;
+            // tile.nbTop = this._tiles[counter-cols];
+            // neb.nbBottom = tile;
+          }
+          else {
+            hasTop = false;
+          }
+
+          // Set top left neighbor.
+          if (hasLeft && hasTop) {
+            neb = this._tiles[counter-cols-1];
+            tile.nebs.topLeft = neb;
+            neb.nebs.bottomRight = tile;
+          }
+
+          // Set top right neighbor.
+          if (counter >= cols && (counter + 1) % cols !== 0) {
+            neb = this._tiles[counter-cols+1];
+            tile.nebs.topRight = neb;
+            neb.nebs.bottomLeft = tile;
           }
 
           counter++;
@@ -247,6 +322,9 @@ define, createjs, document, window, console
 
       // All tiles have been initialized and setup - allocate mines
       var availItems = this._tiles.slice();
+      var key;
+      var tileNebs;
+      var otherTile;
       for (i = 0; i < this._configs.mines; ++ i) {
 
         // Get a random index from the array.
@@ -254,6 +332,29 @@ define, createjs, document, window, console
         tile = availItems[randomIndex];
         tile.mine = true;
         this._mineTiles.push(tile);
+        tileNebs = tile.nebs;
+
+        for (key in tileNebs) {
+          if (tileNebs.hasOwnProperty(key) && tileNebs[key]) {
+            tileNebs[key].totalNebMines++;
+          }
+        }
+
+        // if (tileNebs.top) {
+        //   tileNebs.top.nebMineCount.bottom++;
+        // }
+
+        // if (tileNebs.right) {
+        //   tileNebs.right.nebMineCount.left++;
+        // }
+
+        // if (tileNebs.bottom) {
+        //   tileNebs.bottom.nebMineCount.top++;
+        // }
+
+        // if (tileNebs.left) {
+        //   tileNebs.left.nebMineCount.right++;
+        // }
 
         // Remove the item from the array.
         availItems.splice(randomIndex, 1);
@@ -267,7 +368,9 @@ define, createjs, document, window, console
 
       // todo: remove me.
       for (i = 0; i < this._tiles.length; ++i) {
-        this._tiles[i]._printNebs();
+        var testItem = this._tiles[i];
+        testItem._printNebs();
+        // testItem.showMineCount();
       }
 
     };
@@ -278,12 +381,42 @@ define, createjs, document, window, console
       var tile;
       for (i = 0; i < arrLength; ++i) {
         tile = this._mineTiles[i];
-        tile.showMineColor();
+        tile.showMines();
       }
 
       this._stage.update();
 
       window.alert('Game over');
+    };
+
+    proto.openTilePropagating = function (tile) {
+      var propogatingTiles = {};
+
+      var key;
+      var tileNebs = tile.nebs;
+      var neb;
+      for (key in tileNebs) {
+        if (tileNebs.hasOwnProperty(key) && tileNebs[key]) {
+          neb = tileNebs[key];
+          if (neb.nebMineCount === 0) {
+            propogatingTiles[neb.tileId] = neb;
+          }
+          else {
+            neb.showMineCount();
+          }
+        }
+      }
+
+      this._stage.update();
+
+    };
+
+    proto.openTile = function (tile) {
+      tile.showMineCount();
+      tile.open = true;
+
+      this._openTiles.push(tile);
+      this._stage.update();
     };
 
 

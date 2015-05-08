@@ -15,8 +15,8 @@ require
   require(['game-items'], function (gameItems)  {
 
     var configs = {
-      'rows': 4,
-      'cols': 6,
+      'rows': 10,
+      'cols': 12,
       'mines': 10,
       'tileWidth': 40,
       'tileHeight': 40
